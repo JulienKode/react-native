@@ -34,10 +34,13 @@ module.exports = function registerNativeModuleIOS(dependencyConfig, projectConfi
   addProjectToLibraries(libraries, file);
 
   getProducts(dependencyProject).forEach(product => {
-    project.addStaticLibrary(product, {
-      target: project.getFirstTarget().uuid,
+    project.getTargets().forEach((target) => {
+        project.addStaticLibrary(product, {
+          target: target.uuid,
+        });
     });
   });
+
 
   addSharedLibraries(project, dependencyConfig.sharedLibraries);
 
