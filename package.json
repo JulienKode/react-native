@@ -213,7 +213,7 @@
     "wordwrap": "^1.0.0",
     "write-file-atomic": "^1.2.0",
     "ws": "^1.1.0",
-    "xcode": "^0.9.1",
+    "xcode": "git+https://github.com/JulienKode/node-xcode.git#patch-1",
     "xmldoc": "^0.4.0",
     "xpipe": "^1.0.5",
     "xtend": ">=4.0.0 <4.1.0-0",
